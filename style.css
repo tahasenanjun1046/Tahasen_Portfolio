@@ -408,3 +408,71 @@ footer {
 
     text-align: center;
 }
+
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+    /* General sections */
+
+    section {
+        padding: 40px 20px;
+    }
+
+
+    /* Hero */
+
+    #home {
+        width: 100%;
+
+        margin: 20px 0;
+
+        padding: 50px 25px;
+
+        text-align: center;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home h2 {
+        font-size: 21px;
+    }
+
+    #home img {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    /* Projects */
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Contact */
+
+    form {
+        max-width: 100%;
+    }
+}
