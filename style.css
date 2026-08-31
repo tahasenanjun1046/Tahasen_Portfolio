@@ -1,17 +1,8 @@
-/* =========================
-   RESET
-========================= */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-/* =========================
-   BODY
-========================= */
 
 body {
     font-family: Arial, sans-serif;
@@ -20,20 +11,10 @@ body {
     background-color: #fff9fb;
 }
 
-
-/* =========================
-   LINKS
-========================= */
-
 a {
     text-decoration: none;
     color: #a64d78;
 }
-
-
-/* =========================
-   HEADER
-========================= */
 
 header {
     background-color: #fff0f5;
@@ -41,8 +22,16 @@ header {
     border-bottom: 1px solid #edcbd8;
 }
 
-nav a {
-    margin-right: 25px;
+header {
+    background-color: #fff0f5;
+    padding: 20px 40px;
+    border-bottom: 1px solid #edcbd8;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav .logo {
@@ -51,19 +40,30 @@ nav .logo {
     font-weight: bold;
 }
 
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+.nav-links a {
+    color: #71334f;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b65380;
+}
+
+nav .logo {
+    color: #71334f;
+    font-size: 21px;
+    font-weight: bold;
+}
 
 section {
     padding: 60px 40px;
 }
-
-
-/* =========================
-   HERO SECTION
-========================= */
 
 #home {
     width: 90%;
@@ -79,9 +79,6 @@ section {
     border-radius: 20px;
 }
 
-
-/* "Hello, I'm" */
-
 #home p:first-child {
     margin-bottom: 5px;
 
@@ -91,9 +88,6 @@ section {
     font-weight: 600;
 }
 
-
-/* Name */
-
 #home h1 {
     margin: 8px 0;
 
@@ -101,9 +95,6 @@ section {
 
     font-size: 48px;
 }
-
-
-/* Role */
 
 #home h2 {
     margin-bottom: 15px;
@@ -113,19 +104,11 @@ section {
     font-size: 24px;
 }
 
-
-/* Description */
-
 #home p {
     margin-bottom: 10px;
 
     color: #5b4d54;
 }
-
-
-/* =========================
-   CTA BUTTON
-========================= */
 
 #home a {
     display: inline-block;
@@ -141,11 +124,6 @@ section {
     border: 2px solid #b65380;
     border-radius: 10px;
 }
-
-
-/* =========================
-   ABOUT
-========================= */
 
 #about {
     background-color: #fff9fb;
@@ -191,11 +169,6 @@ section {
     border-radius: 20px;
 }
 
-
-/* =========================
-   PROJECTS
-========================= */
-
 #projects {
     background-color: #fff9fb;
 }
@@ -228,19 +201,9 @@ article a {
     color: #a64d78;
 }
 
-
-/* =========================
-   CONTACT
-========================= */
-
 #contact {
     background-color: #fde8f0;
 }
-
-
-/* =========================
-   FOOTER
-========================= */
 
 footer {
     padding: 25px;
